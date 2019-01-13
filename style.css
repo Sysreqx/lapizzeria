@@ -1,8 +1,8 @@
 /*
 Theme Name: La Pizzeria
-Theme URI:
+Theme URI: https://github.com/Sysreqx/lapizzeria
 Author: SysRq
-Author URI:
+Author URI: https://github.com/Sysreqx
 Description: Theme for Restaraunts
 Version: 1.0
 License: GNU General Public Licence v2 or later
@@ -107,4 +107,49 @@ div.adress p {
 	div.address p {
 		text-align: right;
 	}
+}
+
+/* SOCIAL MENU */
+nav.socials ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+	nav.socials ul {
+		float: right;
+	}
+}
+
+nav.socials ul li {
+	position: relative;
+	display: inline-block;
+}
+
+nav.socials ul li a:before {
+	font-family: 'FontAwesome';
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 5px;
+	content: '\f35d';
+	font-size: 30px;
+	color: #000;
+	-webkit-font-smoothing: antialiased;
+}
+
+nav.socials li a[href*="facebook.com"]::before {
+	content: '\f09a';
+}
+nav.socials li a[href*="twitter.com"]::before {
+	content: '\f099';
+}
+nav.socials li a[href*="pinterest.com"]::before {
+	content: '\f231';
+}
+nav.socials li a[href*="youtube.com"]::before {
+	content: '\f16a';
+}
+nav.socials li a[href*="instagram.com"]::before {
+	content: '\f16d';
 }
