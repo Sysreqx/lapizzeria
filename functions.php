@@ -3,7 +3,7 @@
 function lapizzeria_styles() {
 	// adding stylesheets
 	wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), '6.0.0');
-	wp_register_style('style', get_template_directory_uri() . '/style.css', array(), '1.0');
+	wp_register_style('style', get_template_directory_uri() . '/style.css', array(), '4.0');
 
 	// Enquee the style
 	wp_enqueue_style('normalize');
@@ -14,7 +14,8 @@ add_action('wp_enqueue_scripts', 'lapizzeria_styles');
 // Add Menus
 function lapizzeria_menus() {
 	register_nav_menus( array(
-		'header-menu' => __('Header Menu', 'lapizzeria')
+		'header-menu' => __('Header Menu', 'lapizzeria'),
+		'social-menu' => __('Social Menu', 'lapizzeria')
 	) );
 }
 add_action('init', 'lapizzeria_menus');

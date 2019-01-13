@@ -4,10 +4,13 @@
 	Author: SysRq
 	Author URI:
 	Description: Theme for Restaraunts
-	Version: 1.0
+	Version: 4.0
 	License: GNU General Public Licence v2 or later
 	License URI: http://www.gnu.org/licenses/glp-2.0.html
 	Tags: restaurant, mobile first, responsive, pizza
 	Text Domain: lapizzeria
 */
 
+.sr-text {
+	display: none;
+}
