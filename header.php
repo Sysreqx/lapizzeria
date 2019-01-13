@@ -8,10 +8,11 @@
 <body>
 
 	<header class="site-header">
-		<div class="logo"><a href="<?php echo esc_url(home_url('/') ); ?>"><img src="<?php echo get_template_directory_uri() ?>/img/logo.svg" alt="logo" class="logoimage"></a></div> <!-- .logo -->
-		<div class="header-information">
-			<div class="socials">
-				<?php
+		<div class="container">
+			<div class="logo"><a href="<?php echo esc_url(home_url('/') ); ?>"><img src="<?php echo get_template_directory_uri() ?>/img/logo.svg" alt="logo" class="logoimage"></a></div> <!-- .logo -->
+			<div class="header-information">
+				<div class="socials">
+					<?php
 					$args = array(
 						'theme_location' => 'social-menu',
 						'container' => 'nav',
@@ -21,13 +22,15 @@
 						'link_after' => '</span>'
 					);
 					wp_nav_menu($args);
-				?>
-			</div> <!-- .socials -->
-			<div class="address">
-				<p>8179 Bay Avenue  Mountain View, CA 94043</p>
-				<p>Phone Number: +1-92-456-7890</p>
-			</div>
-		</div> <!-- .header-information -->
+					?>
+				</div> <!-- .socials -->
+				<div class="address">
+					<p>8179 Bay Avenue  Mountain View, CA 94043</p>
+					<p>Phone Number: +1-92-456-7890</p>
+				</div> <!-- .address -->
+
+			</div> <!-- .header-information -->
+		</div> <!-- .container -->
 	</header>
 
 	<div class="main-menu">
