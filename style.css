@@ -54,7 +54,7 @@ h4 {
 	display: none;
 }
 
-/* HEADER */
+/* Header */
 header.site-header {
 	border-bottom: 1px solid #c1c1c1;
 	padding-bottom: 30px;
@@ -97,7 +97,7 @@ div.address {
 	padding-top: 10px;
 }
 
-div.adress p {
+div.address p {
 	margin: 0;
 	font-size: 14px;
 	text-align: center;
@@ -109,7 +109,7 @@ div.adress p {
 	}
 }
 
-/* SOCIAL MENU */
+/* Social Menu */
 nav.socials ul {
 	list-style: none;
 	text-align: center;
