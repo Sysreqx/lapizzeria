@@ -34,7 +34,13 @@
 	</header>
 
 	<div class="main-menu container">
-		<div class="navigation">
+		<div class="mobile-menu">
+			<a href="#" class="mobile">
+				<i class="fa fa-bars"></i> Menu
+			</a>
+		</div> <!-- .mobile-menu -->
+
+		<div class="navigation container">
 			<?php 
 			$args = array(
 				'theme_location' => 'header-menu',
@@ -43,5 +49,5 @@
 			);
 			wp_nav_menu($args);
 			?>
-		</div>
+		</div> <!-- .navigation -->
 	</div>
