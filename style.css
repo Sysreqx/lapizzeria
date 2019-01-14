@@ -153,3 +153,37 @@ nav.socials li a[href*="youtube.com"]::before {
 nav.socials li a[href*="instagram.com"]::before {
 	content: '\f16d';
 }
+
+/* Main Menu */
+nav.site-nav {
+
+}
+
+nav.site-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: table;
+}
+
+nav.site-nav ul li {
+	display: table-cell;
+	width: 1%;
+}
+
+nav.site-nav ul li a {
+	text-align: center;
+	padding: 20px 0;
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	font-family: arial, helvetica;
+}
+
+nav.site-nav ul li.current_page_item a {
+	border-bottom: 8px solid #a61206;
+}
+

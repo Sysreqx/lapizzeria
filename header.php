@@ -33,7 +33,7 @@
 		</div> <!-- .container -->
 	</header>
 
-	<div class="main-menu">
+	<div class="main-menu container">
 		<div class="navigation">
 			<?php 
 			$args = array(
