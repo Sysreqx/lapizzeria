@@ -10,7 +10,7 @@ $(document).ready(function () {
 		if ($(document).width() >= breakpoint) {
 			$('nav.site-nav').show();
 		} else {
-			$('nac.site-nav').hide();
+			$('nav.site-nav').hide();
 		}
 	});
 });
