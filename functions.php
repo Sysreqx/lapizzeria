@@ -1,5 +1,12 @@
 <?php
 
+// Featured Image
+function lapizzeria_setup() {
+	add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'lapizzeria_setup');
+
+
 function lapizzeria_styles() {
 	// adding stylesheets
 	wp_register_style('googlefont', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700,900', array(), '1.0.0');
@@ -19,6 +26,7 @@ function lapizzeria_styles() {
 	wp_enqueue_script('script');
 }
 add_action('wp_enqueue_scripts', 'lapizzeria_styles');
+
 
 // Add Menus
 function lapizzeria_menus() {
