@@ -24,7 +24,7 @@
 			$id_image = get_field('image_1');
 			$image = wp_get_attachment_image_src($id_image, 'boxes');
 			?>
-			<img src="<?php echo $image[0]; ?>" alt="wp_img">
+			<img src="<?php echo $image[0]; ?>" alt="wp_img" class="box-image">
 
 			<!-- <img src="<?php the_field('image_1'); ?>" alt=""> -->
 
@@ -42,7 +42,7 @@
 			$id_image = get_field('image_2');
 			$image = wp_get_attachment_image_src($id_image, 'boxes');
 			?>
-			<img src="<?php echo $image[0]; ?>" alt="wp_img">
+			<img src="<?php echo $image[0]; ?>" alt="wp_img" class="box-image">
 
 			<!-- <img src="<?php the_field('image_2'); ?>" alt=""> -->
 		</div>
@@ -52,7 +52,7 @@
 			$id_image = get_field('image_3');
 			$image = wp_get_attachment_image_src($id_image, 'boxes');
 			?>
-			<img src="<?php echo $image[0]; ?>" alt="wp_img">
+			<img src="<?php echo $image[0]; ?>" alt="wp_img" class="box-image">
 
 			<!-- <img src="<?php the_field('image_3'); ?>" alt=""> -->
 
