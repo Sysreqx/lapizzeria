@@ -290,3 +290,53 @@ nav.site-nav ul li.current_page_item a {
 	font-size: 18px;
 	line-height: 50px;
 }
+
+/* About Us - Boxex */
+.box-information .single-box {
+	text-align: center;
+	width: 100%;
+	color: #fff;
+}
+
+.box-information .single-box img {
+	width: 100%;
+}
+
+@media only screen and (min-width: 480px) {
+	.box-information .single-box {
+		width: 50%;
+		float: left;
+	}
+	.box-information .single-box:last-child {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.box-information .single-box,
+	.box-information .single-box:last-child {
+		width: 33.3%;
+	}
+}
+
+.box-information .single-box:nth-child(3n+1) {
+	background-color: #f19f30;
+}
+
+.box-information .single-box:nth-child(3n+2) {
+	background-color: #127427;
+}
+
+.box-information .single-box:nth-child(3n+3) {
+	background-color: #a61206;
+}
+
+.box-information .single-box h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+.single-box .content-box {
+	padding: 10px;
+}
