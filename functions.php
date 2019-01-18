@@ -6,6 +6,8 @@ function lapizzeria_setup() {
 
 	// add_image_size( $name, $width = 0, $height = 0, $crop = false )
 	add_image_size( 'boxes', 437, 291, true );
+
+	add_image_size('specialties', 768, 515, true);
 }
 add_action('after_setup_theme', 'lapizzeria_setup');
 
