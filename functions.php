@@ -72,7 +72,8 @@ function lapizzeria_specialties() {
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => null,
-		'supports'           => array( 'title', 'editor', 'thumbnail')
+		'supports'           => array( 'title', 'editor', 'thumbnail'),
+		'taxonomies'				 => array( 'category'),
 	);
 
 	register_post_type( 'specialties', $args );
