@@ -40,3 +40,42 @@ function lapizzeria_menus() {
 }
 add_action('init', 'lapizzeria_menus');
 
+// Custom Post Type For the Menu
+function lapizzeria_specialties() {
+	$labels = array(
+		'name'               => _x( 'Pizzas', 'post type general name', 'lapizzeria' ),
+		'singular_name'      => _x( 'Pizza', 'post type singular name', 'lapizzeria' ),
+		'menu_name'          => _x( 'Pizzas', 'admin menu', 'lapizzeria' ),
+		'name_admin_bar'     => _x( 'Pizza', 'add new on admin bar', 'lapizzeria' ),
+		'add_new'            => _x( 'Add New', 'Pizza', 'lapizzeria' ),
+		'add_new_item'       => __( 'Add New Pizza', 'lapizzeria' ),
+		'new_item'           => __( 'New Pizza', 'lapizzeria' ),
+		'edit_item'          => __( 'Edit Pizza', 'lapizzeria' ),
+		'view_item'          => __( 'View Pizza', 'lapizzeria' ),
+		'all_items'          => __( 'All Pizzas', 'lapizzeria' ),
+		'search_items'       => __( 'Search Pizzas', 'lapizzeria' ),
+		'parent_item_colon'  => __( 'Parent Pizzas:', 'lapizzeria' ),
+		'not_found'          => __( 'No Pizzas found.', 'lapizzeria' ),
+		'not_found_in_trash' => __( 'No Pizzas found in Trash.', 'lapizzeria' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'description'        => __( 'Description.', 'lapizzeria' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'specialties' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'thumbnail')
+	);
+
+	register_post_type( 'specialties', $args );
+}
+
+add_action( 'init', 'lapizzeria_specialties' );
