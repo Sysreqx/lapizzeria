@@ -17,7 +17,7 @@ $image = wp_get_attachment_image_src($image, 'full');
 	</div>
 </div>
 
-<div class="main-content container">
+<div class="main-content container clear">
 	<div class="container-grid columns2-3">
 		
 		<main class="content-text">
