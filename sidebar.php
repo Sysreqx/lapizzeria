@@ -1,3 +1,7 @@
 <aside class="columns1-3 sidebar">
-	<h1>sidebar</h1>
+	<?php 
+	if (is_active_sidebar('blog_sidebar')) {
+		dynamic_sidebar('blog_sidebar');
+	}
+	 ?>
 </aside>
