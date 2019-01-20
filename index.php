@@ -17,10 +17,10 @@ $image = wp_get_attachment_image_src($image, 'full');
 	</div>
 </div>
 
-<div class="main-content container clear">
-	<div class="container-grid columns2-3">
+<div class="main-content container">
+	<div class="container-grid">
 		
-		<main class="content-text">
+		<main class="content-text columns2-3">
 			<?php while(have_posts()): the_post(); ?>
 				<article class="entry">
 					<a href="<?php the_permalink(); ?>">
@@ -51,6 +51,8 @@ $image = wp_get_attachment_image_src($image, 'full');
 				</article>
 			<?php endwhile; ?>
 		</main>
+
+		<?php get_sidebar(); ?>
 
 	</div>
 </div>
