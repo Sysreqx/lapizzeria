@@ -29,6 +29,10 @@
 		</main>
 	</div>
 
+	<div class="container comments">
+		<?php comment_form(); ?>
+	</div>
+
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
