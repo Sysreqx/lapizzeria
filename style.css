@@ -518,7 +518,8 @@ img {
 	margin-top: 20px;
 }
 
-.entry-header .date {
+.entry-header .date,
+.entry-information .date {
 	background-color: #f19f30;
 	float: left;
 	width: 70px;
@@ -528,14 +529,16 @@ img {
 	margin-right: 20px;
 }
 
-.entry-header .date time {
+.entry-header .date time,
+.entry-information .date  time {
 	font-size: 30px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 
 }
 
-.entry-header .date time span {
+.entry-header .date time span,
+.entry-information .date time span {
 	font-size: 16px;
 	display: block;
 	text-transform: uppercase;
@@ -553,11 +556,22 @@ img {
 	font-weight: 700;
 }
 
-.entry-header p.author {
+.entry-header p.author,
+.entry-information p.author {
 	text-transform: uppercase;
 	color: #000;
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
+}
+
+.entry-information {
+	padding-top: 30px;
+}
+
+.entry-information p.author {
+	display: inline;
+	float: left;
+	padding-top: 36px;
 }
 
 p.author i {
