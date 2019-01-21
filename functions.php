@@ -2,6 +2,7 @@
 
 // Link or Import the database.php file
 require get_template_directory() . '/inc/database.php';
+require get_template_directory() . '/inc/reservations.php';
 
 // Featured Image
 function lapizzeria_setup() {
