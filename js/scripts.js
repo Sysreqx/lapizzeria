@@ -20,6 +20,19 @@ $(document).ready(function () {
 
 	boxAdjustment();
 
+	// FluidBox Plugin
+	// select gallery a
+	jQuery('.gallery a').each(function() {
+		// adding data-fluidbox to this element
+		jQuery(this).attr({'data-fluidbox': ''});
+	});
+
+	// if have data-fluidbox with lenght great than 0
+	if (jQuery('[data-fluidbox]').length > 0) {
+		// aplying this method
+		jQuery('[data-fluidbox]').fluidbox();
+	}
+
 });
 
 // Adapt the height of the images to the div
