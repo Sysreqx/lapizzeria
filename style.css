@@ -768,3 +768,55 @@ p.logged-in-as a {
 	border: none !important;
 	width: 100%;
 }
+
+/* Reservation Page */
+.reservation {
+	background-image: url(img/bg_contact.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+@media screen and (min-width: 975px) {
+	form.reservation-form {
+		margin-left: 50%;
+	}
+}
+
+.reservation-form {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.reservation-form .field {
+	margin-bottom: 20px;
+	width: 100%;
+	font-size: 20px;
+}
+
+.reservation-form .field input,
+.reservation-form .field textarea {
+	width: 100%;
+	border: 3px solid  #000;
+	padding: 15px 10px;
+}
+
+.reservation-form .field textarea {
+	height: 200px;
+}
+
+.reservation-form ::-webkit-input-placeholder {
+	color: #000;
+}
+.reservation-form :-moz-placeholder {
+	color: #000;
+}
+.reservation-form ::-moz-placeholder {
+	color: #000;
+}
+.reservation-form ::-ms-input-placeholder {
+	color: #000;
+}
+
+.reservation-form  input[type="submit"] {
+	border: none;
+}
