@@ -743,3 +743,28 @@ p.logged-in-as a {
 .comment .children .comment {
 	margin-top: 20px;
 }
+
+/* Gallery */
+#gallery-1 .gallery-item {
+	width: 50% !important;
+	margin: 0;
+	padding: 0 5px;
+}
+
+@media screen and (min-width: 768px) {
+	#gallery-1 .gallery-item {
+		width: 33% !important;
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 975px) {
+	#gallery-1 .gallery-item {
+		width: 25% !important;
+	}
+}
+
+#gallery-1 img {
+	border: none !important;
+	width: 100%;
+}

@@ -8,6 +8,10 @@ function lapizzeria_setup() {
 	add_image_size( 'boxes', 437, 291, true );
 
 	add_image_size('specialties', 768, 515, true);
+
+	// change thumbnails
+	update_option( 'thumbnail_size_w', 253 );
+	update_option( 'thumbnail_size_h', 164 );
 }
 add_action('after_setup_theme', 'lapizzeria_setup');
 
