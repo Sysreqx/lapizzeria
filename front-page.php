@@ -16,7 +16,7 @@
 <?php endwhile; ?>
 
 <div class="main-content container">
-	<main class="content-text clear">
+	<main class="container-grid clear">
 		<h2 class="primary-text text-center">Our Specialties</h2>
 		<?php 
 		$args = array(
@@ -30,15 +30,21 @@
 
 		<?php if ( $query->have_posts() ) : ?>
 
-			<!-- pagination -->
-
-			<!-- cycle -->
 			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-				<h2><?php the_title(); ?></h2>
-			<?php endwhile; ?>
-			<!-- end of the cycle -->
+				
+				<div class="specialty columns1-3">
+					<div class="specialty-content">
+						<?php the_post_thumbnail('specialty-portrait'); ?>
+						<div class="information">
+							<?php the_title('<h3>', '</h3>') ?>
+							<?php the_content(); ?>
+							<p class="price">$<?php the_field('price'); ?></p>
+							<a href="<?php the_permalink(); ?>" class="button primary">read more</a>
+						</div>
+					</div>
+				</div>
 
-			<!-- pagination -->
+			<?php endwhile; ?>
 
 			<?php wp_reset_postdata(); ?>
 

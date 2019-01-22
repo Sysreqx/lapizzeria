@@ -15,6 +15,7 @@ function lapizzeria_setup() {
 	add_image_size( 'boxes', 437, 291, true );
 
 	add_image_size('specialties', 768, 515, true);
+	add_image_size('specialty-portrait', 435, 530, true);
 
 	// change thumbnails
 	update_option( 'thumbnail_size_w', 253 );
