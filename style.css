@@ -92,6 +92,15 @@ h4 {
 	transition: background-color .5s ease;
 }
 
+.secondary {
+	background-color: #f19f30;
+}
+
+.secondary:hover {
+	background-color: #da8b20;
+	transition: background-color .5s ease;
+}
+
 /* Header */
 header.site-header {
 	border-bottom: 1px solid #c1c1c1;
@@ -819,4 +828,30 @@ p.logged-in-as a {
 
 .reservation-form  input[type="submit"] {
 	border: none;
+}
+
+/* Front Page */
+.home .hero {
+	height: 650px;
+}
+
+@media screen and (min-width: 768px) {
+	.home .main-content {
+		margin-top: 0;
+	}
+
+	.home .hero-text {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.home .hero-text {
+		width: 50%;
+	}
+}
+
+.home .hero-text p {
+	line-height: 40px;
+	font-size: 18px;
 }
