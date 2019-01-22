@@ -13,12 +13,41 @@
 			</div>
 		</div>
 	</div>
+<?php endwhile; ?>
 
-	<div class="main-content container">
-		<main class="text-center content-text clear">
+<div class="main-content container">
+	<main class="content-text clear">
+		<h2 class="primary-text text-center">Our Specialties</h2>
+		<?php 
+		$args = array(
+			'posts_per_page'	=> 3,
+			'post_type'				=> 'specialties',
+			'category_name'		=> 'pizzas',
+			'orderby'					=> 'rand'
+		);
+
+		$query = new WP_Query( $args ); ?>
+
+		<?php if ( $query->have_posts() ) : ?>
+
+			<!-- pagination -->
+
+			<!-- cycle -->
+			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+				<h2><?php the_title(); ?></h2>
+			<?php endwhile; ?>
+			<!-- end of the cycle -->
+
+			<!-- pagination -->
+
+			<?php wp_reset_postdata(); ?>
+
+			<?php else : ?>
+				<p><?php esc_html_e( 'Нет постов по вашим критериям.' ); ?></p>
+			<?php endif; ?>
+
 		</main>
 	</div>
 
-<?php endwhile; ?>
 
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
