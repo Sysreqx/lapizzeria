@@ -76,4 +76,12 @@
 		</div>
 	</section>
 
+	<div class="container clear">
+		<h2 class="primary-text text-center">Gallery</h2>
+		<?php 
+		$url = get_page_by_title('Gallery');
+		echo get_post_gallery($url->ID);
+		?>
+	</div>
+
 	<?php get_footer(); ?>
