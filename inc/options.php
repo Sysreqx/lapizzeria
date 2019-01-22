@@ -48,6 +48,4 @@ function lapizzeria_reservations() { ?>
 		</table>
 	</div>
 
-
-
 <?php } ?>
