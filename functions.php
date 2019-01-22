@@ -1,8 +1,11 @@
 <?php
 
-// Link or Import the database.php file
+// Link or Import the database.php file (Sql structure)
 require get_template_directory() . '/inc/database.php';
+// Handles the submission to the db
 require get_template_directory() . '/inc/reservations.php';
+// Creates option Pages for the Theme
+require get_template_directory() . '/inc/options.php';
 
 // Featured Image
 function lapizzeria_setup() {
