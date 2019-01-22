@@ -12,6 +12,42 @@ function lapizzeria_adjustments() {
 	// Rest of the code
 }
 
-function lapizzeria_reservations() {
-	// Rest of the code
-}
+function lapizzeria_reservations() { ?>
+	<!-- provided by wordpress class "wrap" -->
+	<div class="wrap">
+		<h1>Reservations</h1>
+		<table class="wp-list-table widefat stripped">
+			<thead>
+				<tr>
+					<th class="manage-column">ID</th>
+					<th class="manage-column">Name</th>
+					<th class="manage-column">Date of Reservation</th>
+					<th class="manage-column">Email</th>
+					<th class="manage-column">Phone Number</th>
+					<th class="manage-column">Message</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<?php 
+				global $wpdb;
+				$table = $wpdb->prefix . 'reservations';
+				$reservations = $wpdb->get_results("SELECT * FROM $table", ARRAY_A);
+
+				foreach ($reservations as $reservation) : ?>
+					<tr>
+						<td><?php echo $reservation['id']; ?></td>
+						<td><?php echo $reservation['name']; ?></td>
+						<td><?php echo $reservation['date']; ?></td>
+						<td><?php echo $reservation['email']; ?></td>
+						<td><?php echo $reservation['phone']; ?></td>
+						<td><?php echo $reservation['message']; ?></td>
+					</tr>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
+	</div>
+
+
+
+<?php } ?>
