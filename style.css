@@ -904,6 +904,10 @@ p.logged-in-as a {
 	color: #fff;
 }
 
+a.button.primary {
+	margin-top: 30px;
+}
+
 @media screen and (max-width: 767px) {
 	.specialty-content {
 		overflow: visible;
@@ -920,9 +924,5 @@ p.logged-in-as a {
 
 	.specialty-content img {
 		width: 100%;
-	}
-
-	a.button.primary {
-		margin-top: 30px;
 	}
 }

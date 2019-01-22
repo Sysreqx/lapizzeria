@@ -55,5 +55,23 @@
 		</main>
 	</div>
 
+	<section>
+		<div class="container">
+			<div class="container-grid">
+				<?php while(have_posts()): the_post(); ?>
+					<div class="columns2-4">
+						<h3><?php the_field('ingredients'); ?></h3>
+						<?php the_field('ingredients_text'); ?>
+						<?php $url = get_page_by_title('About Us'); ?>
+						<a class="button primary" href="<?php echo get_permalink($url->ID); ?>">read more</a>
+					</div>
+
+					<div class="columns2-4">
+						<img src="<?php the_field('image'); ?>" alt="fresh ingredients">
+					</div>
+				<?php endwhile; ?>
+			</div>
+		</div>
+	</section>
 
 	<?php get_footer(); ?>
