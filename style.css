@@ -1015,18 +1015,18 @@ p.logged-in-as a {
 
 .home .reservation-form input::placeholder,
 .home .reservation-form textarea::placeholder {
-  color: #fff;
-  opacity: 1; /* Firefox */
+	color: #fff;
+	opacity: 1; /* Firefox */
 }
 
 .home .reservation-form input:-ms-input-placeholder,
 .home .reservation-form textarea:-ms-input-placeholder {
-  color: #fff; /* Internet Explorer 10-11 */
+	color: #fff; /* Internet Explorer 10-11 */
 }
 
 .home .reservation-form input::-ms-input-placeholder,
 .home .reservation-form textarea::-ms-input-placeholder {
-  color: #fff; /* Microsoft Edge */
+	color: #fff; /* Microsoft Edge */
 }
 
 .home .reservation-form input[type='submit'] {

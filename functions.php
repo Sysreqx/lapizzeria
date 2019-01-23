@@ -111,3 +111,13 @@ function lapizzeria_widgets() {
 	)	);
 }
 add_action('widgets_init', 'lapizzeria_widgets');
+
+function add_async_defer() {
+	if ('googlemaps' !== $handle) {
+		return $tag;
+	}
+	return str_replace('src', 'async="async" defer="defer" src', $tag);
+	// str_replace(search, replace, subject)
+}
+add_filter('script_loader_tag', 'add_async_defer', 10, 2);
+// add_filter( $tag, $function_to_add, 10, 1 );
