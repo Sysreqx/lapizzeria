@@ -84,11 +84,11 @@
 		?>
 	</section>
 
-	<div class="location-reservation clear">
+	<div class="location-reservation clear container">
 		<div class="container-grid">
 			<div class="columns2-4">
 				<div id="map">
-					
+					it's the map
 				</div>
 			</div>
 
