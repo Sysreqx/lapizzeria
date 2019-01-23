@@ -85,43 +85,28 @@
 	</section>
 
 	<div class="location-reservation clear container">
-		<div class="container-grid">
-			<div class="columns2-4">
-				<div id="map">
-					<a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001030771720/center/76.777349,
-					43.232979/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a>
-					<div class="dg-widget-link">
-						<a href="http://2gis.kz/almaty/center/76.777349,
-						43.232979/zoom/16/routeTab/rsType/bus/to/76.777349,
-						43.232979╎La pizza & burger`s,
-						кафе быстрого питания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до La pizza & burger`s,
-					кафе быстрого питания</a>
-				</div>
-				<script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
-				<script charset="utf-8">
-					new DGWidgetLoader({
-						"width": 400,
-						"height": 600,
-						"borderColor": "#a3a3a3",
-						"pos": {
-							"lat": 43.232979,
-							"lon": 76.777349,
-							"zoom": 16
-						},
-						"opt": { "city": "almaty" },
-						"org": [{
-							"id": "70000001030771720"
-						}]
-					});
-				</script>
-				<noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+		<div class="container-grid parent">
+			<div class="columns2-4 child-l">
+				<div id="map" class="" style="width: 100%; min-height: 300px; height: 100%"></div>
+			</div>
+
+			<div class="columns2-4 child-r">
+				<?php get_template_part('templates/reservation', 'form'); ?>
 			</div>
 		</div>
-
-		<div class="columns2-4">
-			<?php get_template_part('templates/reservation', 'form'); ?>
-		</div>
 	</div>
-</div>
 
-<?php get_footer(); ?>
+	<!-- 2is map -->
+	<script>
+		var map;
+
+		DG.then(function () {
+			map = DG.map('map', {
+				center: [54.98, 82.89],
+				zoom: 13
+			});
+		});
+
+	</script>
+
+	<?php get_footer(); ?>

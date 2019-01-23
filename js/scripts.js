@@ -33,7 +33,23 @@ $(document).ready(function () {
 		jQuery('[data-fluidbox]').fluidbox();
 	}
 
-});
+/*	// Adatp map to the Height of an element 
+	var map = $('#map');
+	if(map.length > 0) {
+		if ($(document).width() >= breakpoint) {
+			displayMap(0);
+		} else {
+			displayMap(300);
+		}
+	}
+	$(window).resize(function(){
+		if ($(document).width() >= breakpoint) {
+			displayMap(0);
+		} else {
+			displayMap(300);
+		}
+	});
+});*/
 
 // Adapt the height of the images to the div
 function boxAdjustment() {
@@ -46,3 +62,15 @@ function boxAdjustment() {
 		});
 	}
 }
+
+/*function displayMap(value) {
+	if(value == 0) {
+		var locationSection = $('.location-reservation');
+		var locationHeight = locationSection.height();
+		$('#map').css({'height': locationHeight});
+	} else {
+
+	}
+}*/
+
+});
