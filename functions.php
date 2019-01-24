@@ -57,7 +57,8 @@ function lapizzeria_styles() {
 			'latitude'		=> get_option('lapizzeria_gmap_latitude'),
 			'longtitude'	=> get_option('lapizzeria_gmap_longtitude'),
 			'popup_text'	=> get_option('lapizzeria_gmap_popup_text'),
-			'label_text'	=> get_option('lapizzeria_gmap_label_text')
+			'label_text'	=> get_option('lapizzeria_gmap_label_text'),
+			'zoom'				=> get_option('lapizzeria_gmap_zoom')
 		) );
 }
 add_action('wp_enqueue_scripts', 'lapizzeria_styles');

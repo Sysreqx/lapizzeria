@@ -94,7 +94,7 @@
 						// add map
 						var map = DG.map('map', {
 							center: [parseFloat(options.latitude), parseFloat(options.longtitude)],
-							zoom: 15
+							zoom: parseInt(options.latitude)
 						});
 
 						// latitude longtitude

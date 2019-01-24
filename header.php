@@ -25,8 +25,8 @@
 					?>
 				</div> <!-- .socials -->
 				<div class="address">
-					<p>8179 Bay Avenue  Mountain View, CA 94043</p>
-					<p>Phone Number: +1-92-456-7890</p>
+					<p><?php echo esc_html(get_option('lapizzeria_location')); ?></p>
+					<p>Phone Number: <?php echo esc_html(get_option('lapizzeria_phone_number')); ?></p>
 				</div> <!-- .address -->
 
 			</div> <!-- .header-information -->
