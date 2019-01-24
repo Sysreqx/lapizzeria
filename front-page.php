@@ -84,7 +84,7 @@
 		?>
 	</section>
 
-	<div class="location-reservation clear container">
+	<div class="location-reservation clear">
 		<div class="container-grid parent">
 			<div class="columns2-4 child-l">
 				<!-- MAP -->
