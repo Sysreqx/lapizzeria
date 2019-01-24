@@ -33,6 +33,8 @@ $(document).ready(function () {
 		jQuery('[data-fluidbox]').fluidbox();
 	}
 
+	init_map();
+
 /*	// Adatp map to the Height of an element 
 	var map = $('#map');
 	if(map.length > 0) {
@@ -71,6 +73,18 @@ function boxAdjustment() {
 	} else {
 
 	}
+}*/
+
+/*// Doesn't work
+function init_map() {
+	var map;
+
+	DG.then(function () {
+		map = DG.map('map', {
+			center: [43.239982, 76.904287],
+			zoom: 13
+		});
+	});
 }*/
 
 });

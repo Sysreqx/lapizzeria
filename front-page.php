@@ -87,7 +87,33 @@
 	<div class="location-reservation clear container">
 		<div class="container-grid parent">
 			<div class="columns2-4 child-l">
+				<!-- MAP -->
 				<div id="map" class="" style="width: 100%; min-height: 300px; height: 100%"></div>
+				<script>
+					DG.then(function () {
+						// add map
+						map = DG.map('map', {
+							center: [43.239982, 76.904287],
+							zoom: 15
+						});
+
+						// latitude longtitude
+						var latlng = DG.latLng(43.239982, 76.904287);
+						// offset value
+						var point = DG.point(-100, 5);
+						// marker
+						var marker = DG.marker(latlng).addTo(map);
+						// popup
+						var popup = DG.popup()
+						.setLatLng(latlng)
+						.setContent('<p>La Pizzeria<br />Best Pizza In Town! <br> 228 kuwatt prosim</p>')
+						// label
+						marker.bindLabel('La Pizzeria - Best Pizza In Town!',
+							{ static: false,
+								offset: point
+							} ).bindPopup(popup);
+					});
+				</script>
 			</div>
 
 			<div class="columns2-4 child-r">
@@ -98,14 +124,6 @@
 
 	<!-- 2is map -->
 	<script>
-		var map;
-
-		DG.then(function () {
-			map = DG.map('map', {
-				center: [54.98, 82.89],
-				zoom: 13
-			});
-		});
 
 	</script>
 

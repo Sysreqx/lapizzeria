@@ -41,13 +41,13 @@ function lapizzeria_styles() {
 
 	wp_register_script('fluidboxjs', get_template_directory_uri() . '/js/jquery.fluidbox.min.js', array('jquery'), '1.9.0', true);
 	wp_register_script('map2gis', 'https://maps.api.2gis.ru/2.0/loader.js', array(), '', false);
-	wp_register_script('twogismap_script', get_template_directory_uri() . '/js/twogismap.js', array(), '');
+	// wp_register_script('twogismap_script', get_template_directory_uri() . '/js/twogismap.js', array(), '');
 	wp_register_script('script', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true);
 	// Add JavaScript files
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('fluidboxjs');
 	wp_enqueue_script('map2gis');
-	wp_enqueue_script('twogismap_script');
+	// wp_enqueue_script('twogismap_script');
 	wp_enqueue_script('script');
 }
 add_action('wp_enqueue_scripts', 'lapizzeria_styles');

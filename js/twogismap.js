@@ -1,14 +1,10 @@
-	// // 2gis map
-	// var map;
+function init_map() {
+	var map;
 
-	// DG.then(function () {
-	// 	map = DG.map('map', {
-	// 		center: [54.98, 82.89],
-	// 		zoom: 13
-	// 	});
-	// });
-
-	// // Marker on the map
-	// DG.marker([54.98, 82.89]).addTo(map);
-	// // Popup with information
-	// DG.marker([54.98, 82.89]).bindPopup('Вы кликнули по мне!');
+	DG.then(function () {
+		map = DG.map('map', {
+			center: [43.239982, 76.904287],
+			zoom: 13
+		});
+	});
+}
