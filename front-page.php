@@ -93,7 +93,7 @@
 					DG.then(function () {
 						// add map
 						var map = DG.map('map', {
-							center: [43.239982, 76.904287],
+							center: [parseFloat(options.latitude), parseFloat(options.longtitude)],
 							zoom: 15
 						});
 
@@ -106,9 +106,9 @@
 						// popup
 						var popup = DG.popup()
 						.setLatLng(latlng)
-						.setContent('<p>La Pizzeria<br />Best Pizza In Town! <br> 228 kuwatt prosim</p>')
+						.setContent(options.popup_text)
 						// label
-						marker.bindLabel('La Pizzeria - Best Pizza In Town!',
+						marker.bindLabel(options.label_text,
 							{ static: false,
 								offset: point
 							} ).bindPopup(popup);

@@ -49,6 +49,16 @@ function lapizzeria_styles() {
 	wp_enqueue_script('map2gis');
 	// wp_enqueue_script('twogismap_script');
 	wp_enqueue_script('script');
+
+	wp_localize_script(
+		'script',
+		'options',
+		array(
+			'latitude'		=> get_option('lapizzeria_gmap_latitude'),
+			'longtitude'	=> get_option('lapizzeria_gmap_longtitude'),
+			'popup_text'	=> get_option('lapizzeria_gmap_popup_text'),
+			'label_text'	=> get_option('lapizzeria_gmap_label_text')
+		) );
 }
 add_action('wp_enqueue_scripts', 'lapizzeria_styles');
 
