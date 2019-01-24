@@ -92,7 +92,7 @@
 				<script>
 					DG.then(function () {
 						// add map
-						map = DG.map('map', {
+						var map = DG.map('map', {
 							center: [43.239982, 76.904287],
 							zoom: 15
 						});
