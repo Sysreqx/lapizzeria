@@ -10,6 +10,9 @@ add_action('admin_menu', 'lapizzeria_options');
 
 function lapizzeria_settings() {
 	register_setting('lapizzeria_options_gmaps', 'lapizzeria_gmap_latitude');
+	register_setting('lapizzeria_options_gmaps', 'lapizzeria_gmap_longtitude');
+	register_setting('lapizzeria_options_gmaps', 'lapizzeria_gmap_popup_text');
+	register_setting('lapizzeria_options_gmaps', 'lapizzeria_gmap_label_text');
 }
 add_action('admin_init', 'lapizzeria_settings');
 
@@ -26,6 +29,18 @@ function lapizzeria_adjustments() { ?>
 				<tr valign="top">
 					<th scope="row">Latitude: </th>
 					<td><input type="text" name="lapizzeria_gmap_latitude" value="<?php echo esc_attr(get_option('lapizzeria_gmap_latitude')); ?>"></td>
+				</tr>
+				<tr valign="top">
+					<th scope="row">Longtitude: </th>
+					<td><input type="text" name="lapizzeria_gmap_longtitude" value="<?php echo esc_attr(get_option('lapizzeria_gmap_longtitude')); ?>"></td>
+				</tr>
+				<tr valign="top">
+					<th scope="row">PopUp Text: </th>
+					<td><input type="text" name="lapizzeria_gmap_popup_text" value="<?php echo esc_attr(get_option('lapizzeria_gmap_popup_text')); ?>"></td>
+				</tr>
+				<tr valign="top">
+					<th scope="row">Label Text: </th>
+					<td><input type="text" name="lapizzeria_gmap_label_text" value="<?php echo esc_attr(get_option('lapizzeria_gmap_label_text')); ?>"></td>
 				</tr>
 			</table>
 			<?php submit_button(); ?>
